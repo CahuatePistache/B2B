@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acopio | Compra grande, compra directo</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="acopio-favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Isotipo Acopio incrustado (no depende de archivos externos) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="iso-g">
+      <path style="fill:var(--cubo,#fff)" d="M-250.81,-50.00 L-173.21,-5.20 L-95.60,-50.00 L-173.21,-94.80Z M-255.31,47.40 L-177.71,92.21 L-177.71,2.60 L-255.31,-42.21Z M-168.71,92.21 L-91.10,47.40 L-91.10,-42.21 L-168.71,2.60Z M95.60,-50.00 L173.21,-5.20 L250.81,-50.00 L173.21,-94.80Z M91.10,47.40 L168.71,92.21 L168.71,2.60 L91.10,-42.21Z M177.71,92.21 L255.31,47.40 L255.31,-42.21 L177.71,2.60Z M-164.21,-200.00 L-86.60,-155.20 L-9.00,-200.00 L-86.60,-244.80Z M-168.71,-102.60 L-91.10,-57.79 L-91.10,-147.40 L-168.71,-192.21Z M-82.10,-57.79 L-68.00,-65.93 L-4.50,-191.13 L-4.50,-192.21 L-82.10,-147.40Z M-77.60,-350.00 L0.00,-305.20 L77.60,-350.00 L0.00,-394.80Z M-82.10,-252.60 L-4.50,-207.79 L-4.50,-297.40 L-82.10,-342.21Z M4.50,-207.79 L82.10,-252.60 L82.10,-342.21 L4.50,-297.40Z"/>
+      <path fill="#FF7A1A" d="M-77.60,-50.00 L0.00,-5.20 L77.60,-50.00 L56.82,-62.00 L-56.82,-62.00Z M-82.10,47.40 L-4.50,92.21 L-4.50,2.60 L-82.10,-42.21Z M4.50,92.21 L82.10,47.40 L82.10,-42.21 L4.50,2.60Z M9.00,-200.00 L86.60,-155.20 L164.21,-200.00 L86.60,-244.80Z M4.50,-191.13 L68.00,-65.93 L82.10,-57.79 L82.10,-147.40 L4.50,-192.21Z M91.10,-57.79 L168.71,-102.60 L168.71,-192.21 L91.10,-147.40Z"/>
+    </g>
+  </defs>
+</svg>
+
+<header>
+  <a href="#" class="logo" aria-label="Acopio, inicio"><svg class="iso" width="48" height="46" viewBox="-290 -430 580 560" aria-hidden="true"><use href="#iso-g" xlink:href="#iso-g"/></svg><span>Acopio</span></a>
+  <form class="buscador">
+    <input type="text" placeholder="Busca por producto, categoría o proveedor...">
+    <button>Buscar</button>
+  </form>
+  <nav>
+    <a href="#">Vender</a>
+    <a href="#">Cotizaciones</a>
+    <a href="#">Ingresar</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Compra grande, compra directo.</h1>
+    <p>Conecta con proveedores y mayoristas. Precios por volumen, sin intermediarios.</p>
+    <a href="#productos" class="btn">Ver productos</a>
+    <a href="#" class="btn sec">Quiero vender</a>
+  </div>
+  <div class="hero-img"><svg class="iso" width="207" height="200" viewBox="-290 -430 580 560" role="img" aria-label="Acopio"><use href="#iso-g" xlink:href="#iso-g"/></svg></div>
+</div>
+
+<section>
+  <h2>Categorías</h2>
+  <div class="cats">
+    <a class="cat" href="#">Abarrotes</a><a class="cat" href="#">Papelería</a>
+    <a class="cat" href="#">Limpieza</a><a class="cat" href="#">Electrónica</a>
+    <a class="cat" href="#">Ropa</a><a class="cat" href="#">Ferretería</a>
+  </div>
+</section>
+
+<section id="productos">
+  <h2>Ofertas por mayoreo</h2>
+  <!-- Estas tarjetas luego se generarán desde la base de datos (PHP/Node + SQL) -->
+  <div class="grid">
+    <article class="card"><div class="foto"></div>
+      <h3>Caja de arroz 20 kg</h3><div class="prov">Distribuidora Norte</div>
+      <div class="precio">$420 <small>c/u</small></div>
+      <div class="min">Mínimo: 10 piezas</div><a href="#" class="btn">Cotizar</a></article>
+    <article class="card"><div class="foto"></div>
+      <h3>Cuadernos profesionales</h3><div class="prov">Papelera del Centro</div>
+      <div class="precio">$18 <small>c/u</small></div>
+      <div class="min">Mínimo: 100 piezas</div><a href="#" class="btn">Cotizar</a></article>
+    <article class="card"><div class="foto"></div>
+      <h3>Cloro 20 L</h3><div class="prov">Químicos Bajío</div>
+      <div class="precio">$185 <small>c/u</small></div>
+      <div class="min">Mínimo: 12 piezas</div><a href="#" class="btn">Cotizar</a></article>
+    <article class="card"><div class="foto"></div>
+      <h3>Cables USB-C (lote)</h3><div class="prov">TecnoMayoreo</div>
+      <div class="precio">$32 <small>c/u</small></div>
+      <div class="min">Mínimo: 50 piezas</div><a href="#" class="btn">Cotizar</a></article>
+  </div>
+</section>
+
+<section>
+  <h2>¿Por qué Acopio?</h2>
+  <div class="beneficios">
+    <div class="ben"><b>Precio por volumen</b><p>Entre más compras, menos pagas.</p></div>
+    <div class="ben"><b>Proveedores verificados</b><p>Vendedores con perfil y reseñas.</p></div>
+    <div class="ben"><b>Cotiza directo</b><p>Negocia sin intermediarios.</p></div>
+    <div class="ben"><b>Envío a tu bodega</b><p>Logística coordinada.</p></div>
+  </div>
+</section>
+
+<footer>
+  <svg class="iso" width="58" height="56" viewBox="-290 -430 580 560" role="img" aria-label="Acopio"><use href="#iso-g" xlink:href="#iso-g"/></svg>
+  <p class="lema">Compra grande, compra directo.</p>
+  <p class="derechos">© 2026 Acopio. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

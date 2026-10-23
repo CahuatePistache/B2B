@@ -1,0 +1,212 @@
+/* ==========================================================
+   Acopio | Hoja de estilos
+   Colores y tipografías según el brand book
+   ========================================================== */
+
+:root {
+  --azul: #12263F;
+  --naranja: #FF7A1A;
+  --crema: #F5F1E8;
+  --verde: #2E8B6E;
+  --gris: #5B6770;
+  --blanco: #fff;
+
+  --fuente-titulos: 'Poppins', sans-serif;
+  --fuente-texto: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--fuente-texto);
+  background: var(--crema);
+  color: var(--azul);
+}
+
+h1, h2, h3, .logo { font-family: var(--fuente-titulos); }
+
+a { text-decoration: none; color: inherit; }
+
+/* ---------- Barra superior ---------- */
+header {
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 14px 5%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iso { display: block; flex: none; }
+
+.logo span { font-size: 1.7rem; letter-spacing: -.5px; }
+
+.buscador { flex: 1; min-width: 220px; display: flex; }
+
+.buscador input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.buscador button {
+  background: var(--naranja);
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 0 8px 8px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav { display: flex; gap: 18px; font-size: .95rem; }
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 60px 5%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero h1 { font-size: 2.4rem; line-height: 1.15; }
+
+.hero p { color: var(--gris); margin: 14px 0 24px; max-width: 480px; }
+
+.btn {
+  display: inline-block;
+  background: var(--naranja);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn.sec {
+  background: transparent;
+  color: var(--azul);
+  border: 2px solid var(--azul);
+  margin-left: 8px;
+}
+
+.hero-img {
+  background: var(--azul);
+  border-radius: 16px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Secciones y categorías ---------- */
+section { padding: 30px 5%; }
+
+section h2 { margin-bottom: 18px; }
+
+.cats { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.cat {
+  background: var(--blanco);
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.cat:hover { border-color: var(--naranja); color: var(--naranja); }
+
+/* ---------- Productos ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 8px rgba(18, 38, 63, .08);
+}
+
+.foto {
+  background: #e6e1d4;
+  height: 130px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 { font-size: 1rem; }
+
+.prov { font-size: .8rem; color: var(--gris); }
+
+.precio {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 8px 0 2px;
+}
+
+.min {
+  font-size: .8rem;
+  color: var(--verde);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card .btn { width: 100%; text-align: center; padding: 9px; }
+
+/* ---------- Beneficios ---------- */
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.ben {
+  background: var(--azul);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.ben b { color: var(--naranja); font-family: var(--fuente-titulos); }
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--azul);
+  color: #fff;
+  padding: 32px 5% 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .iso { margin: 0 auto 8px; }
+
+footer .lema { font-size: .9rem; color: #C9D1D9; }
+
+footer .derechos {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, .15);
+  font-size: .72rem;
+  color: #9AA5B1;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.8rem; }
+}
